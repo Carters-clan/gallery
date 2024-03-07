@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+.container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+}
+.container .heading h3 span{
+    font-weight: 100;
+}
+.container .photo-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .photo-gallery .charity{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.container .photo-gallery .charity img{
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+.container .photo-gallery .charity video{
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .photo-gallery{
+        flex-direction: column;
+    }
+
+    .container .photo-gallery .charity{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 643px){
+    .container .heading{
+        width: 100%;
+    
+    }
+    .container .heading h3{
+        font-size: 1em;
+    }
+}
